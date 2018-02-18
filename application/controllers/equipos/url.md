@@ -1,0 +1,5 @@
+'/equipos', 'application.controllers.equipos.index.Index',
+'/equipos/view/(.+)', 'application.controllers.equipos.view.View',
+'/equipos/edit/(.+)', 'application.controllers.equipos.edit.Edit',
+'/equipos/delete/(.+)', 'application.controllers.equipos.delete.Delete',
+'/equipos/insert', 'application.controllers.equipos.insert.Insert',

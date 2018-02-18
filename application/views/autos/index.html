@@ -1,0 +1,21 @@
+$def with(autos)
+<h3>
+    <a href="/autos">autos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>autos</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in autos:
+        <tr>
+            <td><a href='/autos/view/$item.id_auto'>$item.marca</a></td>
+            <td><a href='/autos/edit/$item.id_auto'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/autos/delete/$item.id_auto'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

@@ -1,0 +1,1 @@
+'/api_equipos/?', 'application.api.equipos.api_equipos.Api_equipos',

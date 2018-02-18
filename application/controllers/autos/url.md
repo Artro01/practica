@@ -1,0 +1,5 @@
+'/autos', 'application.controllers.autos.index.Index',
+'/autos/view/(.+)', 'application.controllers.autos.view.View',
+'/autos/edit/(.+)', 'application.controllers.autos.edit.Edit',
+'/autos/delete/(.+)', 'application.controllers.autos.delete.Delete',
+'/autos/insert', 'application.controllers.autos.insert.Insert',

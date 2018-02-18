@@ -1,0 +1,37 @@
+$def with(equipos, message)
+<h3>
+    <a href="/equipos">equipos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_equipo" id="id_equipo" value="$equipos.id_equipo" />
+
+    <div class="form-group">
+    <label for="marca">marca</label>
+    <input required id="marca" type="text" class="form-control" name="marca" size="30" value="$equipos.marca"/>
+</div><div class="form-group">
+    <label for="modelo">modelo</label>
+    <input required id="modelo" type="text" class="form-control" name="modelo" size="30" value="$equipos.modelo"/>
+</div><div class="form-group">
+    <label for="tipo">tipo</label>
+    <input required id="tipo" type="text" class="form-control" name="tipo" size="30" value="$equipos.tipo"/>
+</div><div class="form-group">
+    <label for="inventario">inventario</label>
+    <input required id="inventario" type="text" class="form-control" name="inventario" size="30" value="$equipos.inventario"/>
+</div><div class="form-group">
+    <label for="precio">precio</label>
+    <input required id="precio" type="text" class="form-control" name="precio" size="30" value="$equipos.precio"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
